@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>서대문구청 안심번호</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script type="text/javascript" src="../assets/js/jquery-3.4.1.min.js"></script>
+    <!-- datepicker -->
+    <link rel="stylesheet" href="../assets/css/datepicker.css">
+    <script src="../assets/js/datepicker.js"></script>
+    <script src="../assets/js/datepicker.ko.js"></script>
+</head>
+
+<body>
+    <!-- container -->
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="head_title">
+                <img src="../assets/images/logo.png" alt="" />
+                <div class="head_title_text">
+                    <label class="head_title_text_b">서대문구</label>
+                    <label class="head_title_text_s">SEODAEMUN-GU</label>
+                </div>
+            </div>
+            <div class="login_info txt_right">
+                <button class="login_name"><span class="fw_bold">홍길동(jijache_admin)</span><em class="col_grey">
+                        님</em></button>
+                <div class="login_list">
+                    <a href="내정보.html">내정보</a>
+                    <a href="로그인.html">로그아웃</a>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+        <!-- content -->
+        <div class="container clear">
+            <!-- navigation -->
+            <!-- li 에 active 클래스가 붙을 시 활성화됩니다 -->
+            <nav class="nav">
+                <ul class="nav_deps1">
+                    <li class="active">
+                        <button class="nav_btn">안심번호</button>
+                        <ul class="nav_deps2">
+                            <li><a href="번호설정.html">번호 설정</a></li>
+                            <li><a href="이력조회.html">이력 조회</a></li>
+                            <li class="active"><a href="통계조회.html">통계 조회</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- // navigation -->
+            <main class="con_wrap">
+                <div class="clear title">
+                    <h2 class="left">통계 조회</h2>
+                </div>
+                <table class="table_type2 hover">
+                    <caption class="hide">
+                        <span>안심번호 통계 목록</span>
+                        <span>안심번호 사용여부, 처리결과 등을 알 수 있다.</span>
+                    </caption>
+                    <colgroup>
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                        <col width="25%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="2">사용여부</th>
+                            <th colspan="2">처리결과</th>
+                        </tr>
+                        <tr>
+                            <th>사용(할당)</th>
+                            <th>미사용(해지)</th>
+                            <th>요청</th>
+                            <th>처리</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>596</td>
+                            <td>124</td>
+                            <td>13</td>
+                            <td>710</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </main>
+        </div>
+        <!-- content -->
+        <!-- footer -->
+        <footer>
+            <a href="#">개인정보 처리 방침</a>
+            <p>Copyright(C) 2018 GIMPO CITY. All rights reserved.</p>
+        </footer>
+        <!-- // footer -->
+
+    </div>
+    <!-- / container -->
+    <script src="../assets/js/common.js"></script>
+</body>
+
+</html>

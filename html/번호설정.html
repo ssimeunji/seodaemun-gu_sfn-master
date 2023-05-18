@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>서대문구청 안심번호</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <script type="text/javascript" src="../assets/js/jquery-3.4.1.min.js"></script>
+    <!-- datepicker -->
+    <link rel="stylesheet" href="../assets/css/datepicker.css">
+    <script src="../assets/js/datepicker.js"></script>
+    <script src="../assets/js/datepicker.ko.js"></script>
+
+</head>
+
+<body>
+    <!-- container -->
+    <div id="wrap">
+        <!-- header -->
+        <header>
+            <div class="head_title">
+                <img src="../assets/images/logo.png" alt="" />
+                <div class="head_title_text">
+                    <label class="head_title_text_b">서대문구</label>
+                    <label class="head_title_text_s">SEODAEMUN-GU</label>
+                </div>
+            </div>
+            <div class="login_info txt_right">
+                <button class="login_name"><span class="fw_bold">홍길동(jijache_admin)</span><em class="col_grey">
+                        님</em></button>
+                <div class="login_list">
+                    <a href="#">내정보</a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+        <!-- content -->
+        <div class="container clear">
+            <!-- navigation -->
+            <!-- li 에 active 클래스가 붙을 시 활성화됩니다 -->
+            <nav class="nav">
+                <ul class="nav_deps1">
+                    <li class="active">
+                        <button class="nav_btn">안심번호</button>
+                        <ul class="nav_deps2">
+                            <li class="active"><a href="번호설정.html">번호 설정</a></li>
+                            <li><a href="이력조회.html">이력 조회</a></li>
+                            <li><a href="통계조회.html">통계 조회</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- // navigation -->
+            <main class="con_wrap">
+                <div class="clear title">
+                    <h2 class="left">번호 설정</h2>
+                </div>
+                <table class="table_type3 hover">
+                    <caption class="hide">
+                        <span>안심번호 신청 목록</span>
+                        <span>안심번호 신청자들의 번호 설정을 할 수 있다.</span>
+                    </caption>
+                    <colgroup>
+                        <col width="6%">
+                        <col width="15%">
+                        <col width="12%">
+                        <col width="17%">
+                        <col width="16%">
+                        <col width="15%">
+                        <col width="10%">
+                        <col width="9%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>이름</th>
+                            <th>관계</th>
+                            <th>연락처</th>
+                            <th>차량번호</th>
+                            <th>신청날짜</th>
+                            <th>상태</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>김지환</td>
+                            <td>배우자</td>
+                            <td>010-1111-2222</td>
+                            <td>123주4567</td>
+                            <td>2023.05.02</td>
+                            <td>요청</td>
+                            <td><img class="pwd_btn" src="../assets/images/icon/edit.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>박성진2</td>
+                            <td>본인</td>
+                            <td>010-2222-2222</td>
+                            <td>789이1234</td>
+                            <td>2023.05.03</td>
+                            <td>요청</td>
+                            <td><img class="pwd_btn" src="../assets/images/icon/edit.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>김백준</td>
+                            <td>본인</td>
+                            <td>010-3333-4444</td>
+                            <td>147가0258</td>
+                            <td>2023.05.08</td>
+                            <td>처리</td>
+                            <td><img class="pwd_btn" src="../assets/images/icon/edit.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>서지은</td>
+                            <td>기타</td>
+                            <td>010-4444-5555</td>
+                            <td>369가8765</td>
+                            <td>2023.05.10</td>
+                            <td>처리</td>
+                            <td><img class="pwd_btn" src="../assets/images/icon/edit.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>이종욱</td>
+                            <td>자녀</td>
+                            <td>010-5555-6666</td>
+                            <td>456주4567</td>
+                            <td>2023.05.11</td>
+                            <td>처리</td>
+                            <td><img class="pwd_btn" src="../assets/images/icon/edit.png" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- 안심번호 설정 팝업 -->
+                <div class="modal_wrap pwd_modal">
+                    <div class="modal_header">
+                        <p class="modal_title">안심번호 설정</p>
+                        <button class="modal_x close_modal"></button>
+                    </div>
+                    <div class="modal_section">
+                        <div class="modal_con">
+                            <table class="table_type2">
+                                <caption class="hide">
+                                    <span>안심번호 설정</span>
+                                    <span>안심번호 번호 설정을 할 수 있다.</span>
+                                </caption>
+                                <colgroup>
+                                    <col width="8%">
+                                    <col width="18%">
+                                    <col width="12%">
+                                    <col width="22%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>이름</th>
+                                        <th>관계</th>
+                                        <th>연락처</th>
+                                        <th>차량번호</th>
+                                        <th>신청날짜</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>김지환</td>
+                                        <td>배우자</td>
+                                        <td>010-1111-2222</td>
+                                        <td>123주4567</td>
+                                        <td>2023.05.02</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td colspan="2">안심번호</td>
+                                        <td colspan="4">
+                                            <input type="text" class="w_80 txt_center" />
+                                            <input type="text" class="w_80 txt_center" />
+                                            <input type="text" class="w_80 txt_center" />
+                                            <input type="button" class="w_100 txt_center small_grey px_5 ml_10"
+                                                value="다른 번호 보기" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn_center">
+                            <button type="button" class="small_black w_100 close_modal">저장</button>
+                            <button type="button" class="small_borB w_100 close_modal">취소</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 안심번호 설정 팝업 -->
+
+                <div class="paging txt_center clear">
+                    <ul>
+                        <li><a href="" class="paging_first"></a></li>
+                        <li><a href="" class="paging_prev"></a></li>
+                        <li class="on"><a href="" class="paging_num">1</a></li>
+                        <li><a href="" class="paging_num">2</a></li>
+                        <li><a href="" class="paging_num">3</a></li>
+                        <li><a href="" class="paging_num">4</a></li>
+                        <li><a href="" class="paging_num">5</a></li>
+                        <li><a href="" class="paging_num">6</a></li>
+                        <li><a href="" class="paging_num">7</a></li>
+                        <li><a href="" class="paging_num">8</a></li>
+                        <li><a href="" class="paging_num">9</a></li>
+                        <li><a href="" class="paging_num">10</a></li>
+                        <li><a href="" class="paging_next"></a></li>
+                        <li><a href="" class="paging_last"></a></li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+        <!-- content -->
+        <!-- footer -->
+        <footer>
+            <a href="#">개인정보 처리 방침</a>
+            <p>Copyright(C) 2018 GIMPO CITY. All rights reserved.</p>
+        </footer>
+        <!-- // footer -->
+
+    </div>
+    <!-- / container -->
+
+    <script>
+        $(function () {
+            $(".pwd_btn").on("click", function () {
+                $(".pwd_modal").addClass("active");
+                addnDimLayer();
+            });
+
+        });
+    </script>
+    <script src="../assets/js/common.js"></script>
+</body>
+
+</html>
